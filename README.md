@@ -76,7 +76,7 @@ To connect Looker Studio to BigQuery:
 
 1. Go to [Looker Studio](https://lookerstudio.google.com)
 2. Create a new report and select BigQuery as the data source
-3. Choose project `rational-lambda-487313-t2`, dataset `fred_data`, table `sp500_daily`
+3. Choose project `your-gcp-project-id`, dataset `fred_data`, table `sp500_daily`
 4. Build charts using `date` as the time dimension and `sp500` as the metric
 
 ---
