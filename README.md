@@ -1,5 +1,4 @@
 <img width="687" height="521" alt="ภาพถ่ายหน้าจอ 2569-02-24 เวลา 23 10 13" src="https://github.com/user-attachments/assets/bc71209a-6b9a-462d-8bf3-d1a016463f8f" />
-<img width="687" height="521" alt="ภาพถ่ายหน้าจอ 2569-02-24 เวลา 23 10 13" src="https://github.com/user-attachments/assets/bc71209a-6b9a-462d-8bf3-d1a016463f8f" />
 
 # airflow_fredapi_gcp_bq
 
