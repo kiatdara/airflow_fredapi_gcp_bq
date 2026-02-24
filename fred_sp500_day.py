@@ -9,8 +9,8 @@ from google.cloud import bigquery, storage
 
 def fetch_and_load():
     API_KEY = Variable.get("fred_api_key")
-    PROJECT_ID = "rational-lambda-487313-t2"
-    BUCKET_NAME = "fred-data-backup"
+    PROJECT_ID = "your-gcp-project-id"
+    BUCKET_NAME = "your-bucket-name"
     TABLE_ID = f"{PROJECT_ID}.fred_data.sp500_daily"
 
     hook = GoogleBaseHook(gcp_conn_id="google_cloud_default")
