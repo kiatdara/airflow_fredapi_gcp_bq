@@ -1,3 +1,6 @@
+<img width="687" height="521" alt="ภาพถ่ายหน้าจอ 2569-02-24 เวลา 23 10 13" src="https://github.com/user-attachments/assets/bc71209a-6b9a-462d-8bf3-d1a016463f8f" />
+<img width="687" height="521" alt="ภาพถ่ายหน้าจอ 2569-02-24 เวลา 23 10 13" src="https://github.com/user-attachments/assets/bc71209a-6b9a-462d-8bf3-d1a016463f8f" />
+
 # airflow_fredapi_gcp_bq
 
 An automated data pipeline that fetches daily S&P 500 data from the FRED API, stores it in Google Cloud Storage as a Data Lake, and loads it into Google BigQuery using Apache Airflow on Google Cloud VM. The data is visualized through a Looker Studio dashboard.
