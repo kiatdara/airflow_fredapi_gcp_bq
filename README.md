@@ -1,6 +1,6 @@
 # airflow_fredapi_gcp_bq
 
-An automated data pipeline that fetches daily S&P 500 data from the FRED API and loads it into Google BigQuery using Apache Airflow on Google Cloud VM. The data is visualized through a Looker Studio dashboard.
+An automated data pipeline that fetches daily S&P 500 data from the FRED API, stores it in Google Cloud Storage as a Data Lake, and loads it into Google BigQuery using Apache Airflow on Google Cloud VM. The data is visualized through a Looker Studio dashboard.
 
 ---
 
@@ -8,6 +8,7 @@ An automated data pipeline that fetches daily S&P 500 data from the FRED API and
 
 - Apache Airflow — manages workflow and scheduling
 - FRED API — data source for S&P 500 from the Federal Reserve
+- Google Cloud Storage (GCS) — acts as a Data Lake for storing raw data before loading into BigQuery
 - Google BigQuery — data warehouse for storing the data
 - Python — used to write DAG logic and data transformation
 - Google Cloud VM — server for running Airflow
@@ -17,10 +18,13 @@ An automated data pipeline that fetches daily S&P 500 data from the FRED API and
 
 ## Pipeline Flow
 
+## Pipeline Flow
+
 1. Airflow triggers the DAG `fred_sp500_daily` on a daily schedule
 2. Task `fetch_sp500_to_bq` fetches the latest S&P 500 price from FRED API
-3. Data is written into the `sp500_daily` table in BigQuery
-4. Looker Studio connects to BigQuery and refreshes the dashboard automatically
+3. Raw data is stored in Google Cloud Storage (GCS) as a Data Lake
+4. Data is loaded from GCS into the `sp500_daily` table in BigQuery
+5. Looker Studio connects to BigQuery and refreshes the dashboard automatically
 
 ---
 
